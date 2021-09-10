@@ -8,7 +8,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 import SwitchButton from "../Switch";
 import { useStyles } from "./styled";
-import Search from "../Search";
+// import Search from "../Search";
 
 // ANCHOR Component
 export default function SearchAppBar() {
@@ -45,7 +45,7 @@ export default function SearchAppBar() {
               </Button>
             </Link>
           </div>
-          <Search />
+          {/* <Search /> */}
           <SwitchButton />
         </Toolbar>
       </AppBar>
