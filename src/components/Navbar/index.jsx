@@ -3,7 +3,7 @@ import React from "react";
 
 import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import BookmarkIcon from "@material-ui/icons/Bookmark";
+// import BookmarkIcon from "@material-ui/icons/Bookmark";
 import HomeIcon from "@material-ui/icons/Home";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 import SwitchButton from "../Switch";
@@ -38,12 +38,12 @@ export default function SearchAppBar() {
                 <Typography color="textSecondary">Piadas</Typography>
               </Button>
             </Link>
-            <Link to="/minhas-piadas">
+            {/* <Link to="/minhas-piadas">
               <Button color="secondary">
                 <BookmarkIcon className={classes.icon} />
                 <Typography color="textSecondary">Minhas piadas</Typography>
               </Button>
-            </Link>
+            </Link> */}
           </div>
           {/* <Search /> */}
           <SwitchButton />
