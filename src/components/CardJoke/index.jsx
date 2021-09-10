@@ -27,7 +27,12 @@ export default function CardJoke(props) {
         >
           #{joke.id}
         </Typography>
-        <Typography variant="h5" component="h3" color="textSecondary">
+        <Typography
+          variant="h5"
+          component="h3"
+          color="textSecondary"
+          testID="jokeId"
+        >
           {replaceSpecialCharacter(joke.joke)}
         </Typography>
         <Typography className={classes.pos} color="textSecondary">

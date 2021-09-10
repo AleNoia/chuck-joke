@@ -27,7 +27,7 @@ export default function ListJokes(props) {
       {!res.loading
         ? response.map((joke) => (
             <li key={joke.id}>
-              <CardJoke testID="joke" joke={joke} />
+              <CardJoke joke={joke} />
             </li>
           ))
         : false}
