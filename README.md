@@ -83,11 +83,11 @@ As tecnologias e linguagens usadas neste projeto:
 # <a name="WhatILearn"></a>🧠 O que eu aprendi 
 Durante o desenvolvimento desse projeto desenvolvi muitas habilidades. Uma principal foi o planejamento e a organização. Contruí um [mapa mental](https://whimsical.com/chuck-joke-3xbEUiesSxHktjpLvADmMs) e um [documento de planejamento](https://docs.google.com/document/d/1PWcTX4ixfZu3kppsIBxMLNjEH49fK9L6keWO_U5aH7I/edit?usp=sharing) para ver as funcionalidades que eu poderia acrescentar inicialmente ou posteriormente, priorizando as funções principais.
 
-Tecnicamente aprendi muito, ainda mais sobre sobre o React JS, como controlar o estado da aplicação utilizando hooks com useContext e useReducer. Também aprendi como criar meus próprios hooks, o que facilita bastante o desenvolvimento. 
+Tecnicamente aprendi muito, ainda mais sobre sobre o React JS e testes, organizei melhor meu código em relação ao controle de estado da aplicação utilizando hooks com useContext e useReducer. Também aprendi como criar meus próprios hooks, o que facilita bastante o desenvolvimento. 
 
 Aprendi a utilizar o Material UI para construir a aplicação com componentes isolados e fazer correções na inconsistencias dos navegadores.
 
-Desenvolvi ainda mais minhas habilidades com JavaScript e Axios.
+Desenvolvi ainda mais minhas habilidades com JavaScript e Axios. O estudo contínuo utilizando JS acaba trazendo mais experiências de formas melhores, otimizadas e mais legíveis de fazer determinada lógica para uma função na aplicação.
 
 ***
 
