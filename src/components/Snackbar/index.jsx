@@ -31,7 +31,7 @@ export default function SnackbarComponent(props) {
         open={open}
         autoHideDuration={6000}
         onClose={handleClose}
-        message="Modo explícito ativiado! Não será possível mudar o nome"
+        message="Modo explícito ativiado! Não será possível mudar o nome nas piadas"
         action={
           <>
             <IconButton
