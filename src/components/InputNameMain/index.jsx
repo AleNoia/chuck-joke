@@ -27,14 +27,21 @@ export default function InputNameMain() {
 
   // Component
   return (
-    <form noValidate autoComplete="off" className={classes.root}>
+    <form
+      noValidate
+      autoComplete="off"
+      className={classes.root}
+      data-testid="formId"
+    >
       <input
         className={classes.input}
         placeholder="Seu nome"
         onChange={(e) => setName(e.target.value)}
+        data-testid="inputId"
       />
       <button
         type="submit"
+        data-testid="buttonInputId"
         className={classes.button}
         onClick={(e) => {
           handleSetName(e);

@@ -41,6 +41,7 @@ export default function Hero() {
               Olá, sou o {`${firstName} ${lastName}`} 😎
             </Typography>
           </Paper>
+
           <Paper elevation={3} className={classes.cardHeroSecondary}>
             <Typography variant="h4" color="textSecondary">
               {!res.loading
@@ -49,6 +50,7 @@ export default function Hero() {
             </Typography>
           </Paper>
         </div>
+
         <div className={classes.containerInput}>
           <InputNameMain />
         </div>
