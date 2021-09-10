@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-Um website que consome a API ICNDB listando as melhores piadas do Chuck Norris 
+Um website que consome a API ICNDB listando as melhores piadas do Chuck Norris com React JS
 </p>
 
 <p align="center">
