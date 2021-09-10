@@ -1,39 +1,41 @@
 // ANCHOR Imports
-import { useState, useContext } from "react";
+import React, { useState, useContext } from "react";
+// import TextField from "@material-ui/core/TextField";
 import { AppContext } from "../../store";
 import { changeName } from "../../store/actions";
-// import {} from "./styled";
+import UseBreakName from "../../hooks/usebreakName";
+import { useStyles } from "./styled";
 
 // ANCHOR Component
 export default function InputNameMain() {
-  const [name, setName] = useState("");
-  const { dispatch } = useContext(AppContext);
-
-  function breakName(nameCharacter) {
-    const arrayName = nameCharacter.split(" ");
-    const [firstName, ...lastName] = arrayName;
-    const newLastName = `${lastName.join(" ")}`;
-    const newName = { firstName, newLastName };
-    return newName;
-  }
+  const classes = useStyles();
+  const {
+    state: { firstName, lastName },
+    dispatch,
+  } = useContext(AppContext);
+  const [name, setName] = useState(`${firstName} ${lastName}`);
 
   // Verficando se o campo está vazio
   function handleSetName(e) {
     e.preventDefault();
     if (name === " " || name === "") {
-      changeName(dispatch, breakName("Chuck Norris"));
+      changeName(dispatch, UseBreakName("Chuck Norris"));
     } else {
-      changeName(dispatch, breakName(name.trim()));
+      changeName(dispatch, UseBreakName(name.trim()));
     }
   }
 
   // Component
   return (
-    <form>
-      <h1>Input name main</h1>
-      <input type="text" onChange={(e) => setName(e.target.value)} />
+    <form noValidate autoComplete="off" className={classes.root}>
+      <input
+        className={classes.input}
+        placeholder="Seu nome"
+        onChange={(e) => setName(e.target.value)}
+      />
       <button
         type="submit"
+        className={classes.button}
         onClick={(e) => {
           handleSetName(e);
         }}

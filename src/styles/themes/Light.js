@@ -1,11 +1,11 @@
 import { shade, setLightness } from "polished";
 import { createTheme } from "@material-ui/core";
 
-const primary = "#52B8BC";
-const secundary = "#F5C174";
+const primary = "#0062a8";
+const secundary = "#ffa42e";
 
 const text = "#333333";
-const textMedium = "#7d7d7d";
+// const textMedium = "#7d7d7d";
 const textLight = "#fff";
 
 export default createTheme({
@@ -23,10 +23,16 @@ export default createTheme({
       dark: shade(0.15, `${secundary}`),
       contrastText: { text },
     },
+    text: {
+      primary: "#333333",
+      secondary: "#fff",
+      disabled: "#7d7d7d",
+    },
   },
-  text: {
-    primary: { text },
-    secondary: { textLight },
-    disabled: { textMedium },
+  typography: {
+    useNextVariants: true,
+    button: {
+      textTransform: "none",
+    },
   },
 });

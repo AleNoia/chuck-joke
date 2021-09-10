@@ -1,6 +1,6 @@
 // ANCHOR Imports
 import { useState, useEffect } from "react";
-import axios from "../services/axios";
+import axios from "../../services/axios";
 
 // ANCHOR Hook
 // Hook criada para usar o axios dinamicamente

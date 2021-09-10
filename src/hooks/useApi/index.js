@@ -1,11 +1,11 @@
 // ANCHOR Imports
 import { useContext } from "react";
-import { AppContext } from "../store";
-import useAxios from "./useAxios";
+import { AppContext } from "../../store";
+import useAxios from "../useAxios";
 
 // ANCHOR Hook
 // Hook criado para consumir os dados da API dinamicamente
-export default function useApi() {
+export default function UseApi(listNum, jokeId) {
   const {
     state: { firstName, lastName, jokeCategory },
   } = useContext(AppContext);
@@ -33,12 +33,25 @@ export default function useApi() {
     return ``;
   }
 
+  // Fazendo requisiçãoe de uma lista de piadas
+  function listJokes(num) {
+    if (num) return `/${num}/`;
+    return ``;
+  }
+
+  // Encontrando uma piada específica
+  function searchById(id) {
+    if (id) return `${id}/`;
+    return ``;
+  }
+
   // URL que será gerada dinamicamente
-  const url = `/jokes/random${excludeCategory(jokeCategory)}${hasNameOrExclude(
+  const url = `/jokes/${searchById(jokeId) || "random"}${listJokes(
+    listNum
+  )}${excludeCategory(jokeCategory)}${hasNameOrExclude(
     jokeCategory,
     firstName
   )}`;
-  // console.log(url);
 
   // Consumindo dados da API
   const response = useAxios(url);

@@ -1,7 +1,7 @@
 // ANCHOR Imports
+import { createGlobalStyle } from "@material-ui/core/styles";
 
 // SECTION Variables
-// ANCHOR Colors
 
 // ANCHOR Elements
 export const heightNavbar = 72; // Height navbar
@@ -43,16 +43,11 @@ export const isFlex = ({ important, direction, align, justify }) => `
 
 // SECTION Reset
 
-// export default createGlobalStyle`
-//   body{
-//     background-color: { theme.palette.primary.main }
-//   }
+export default createGlobalStyle`
 
-//  a {
-//    &:visited{
-//      color: ${primaryDark}
-//    }
-//  }
-// `;
+ a {
+   text-decoration: none;
+ }
+`;
 
 // !SECTION Reset

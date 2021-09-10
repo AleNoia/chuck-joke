@@ -1,50 +1,52 @@
 // ANCHOR Imports
 import React from "react";
 
-import MenuIcon from "@material-ui/icons/Menu";
-import SearchIcon from "@material-ui/icons/Search";
-import {
-  AppBar,
-  Toolbar,
-  IconButton,
-  Typography,
-  InputBase,
-} from "@material-ui/core";
+import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
+import BookmarkIcon from "@material-ui/icons/Bookmark";
+import HomeIcon from "@material-ui/icons/Home";
+import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 import SwitchButton from "../Switch";
 import { useStyles } from "./styled";
+import Search from "../Search";
 
 // ANCHOR Component
 export default function SearchAppBar() {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
+    <div>
+      <AppBar position="static" className={classes.root}>
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
+          <Typography
+            className={classes.title}
+            color="textSecondary"
+            variant="h6"
+            noWrap
           >
-            <MenuIcon />
-          </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            Chuck Joke
           </Typography>
-          <SwitchButton />
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
-            </div>
-            <InputBase
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-              inputProps={{ "aria-label": "search" }}
-            />
+          <div className={classes.groupStart}>
+            <Link to="/">
+              <Button color="secondary">
+                <HomeIcon className={classes.icon} />
+                <Typography color="textSecondary">Home</Typography>
+              </Button>
+            </Link>
+            <Link to="/piadas">
+              <Button color="secondary">
+                <ChatBubbleIcon className={classes.icon} />
+                <Typography color="textSecondary">Piadas</Typography>
+              </Button>
+            </Link>
+            <Link to="/minhas-piadas">
+              <Button color="secondary">
+                <BookmarkIcon className={classes.icon} />
+                <Typography color="textSecondary">Minhas piadas</Typography>
+              </Button>
+            </Link>
           </div>
+          <Search />
+          <SwitchButton />
         </Toolbar>
       </AppBar>
     </div>
