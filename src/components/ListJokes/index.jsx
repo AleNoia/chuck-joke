@@ -27,7 +27,7 @@ export default function ListJokes(props) {
       {!res.loading
         ? response.map((joke) => (
             <li key={joke.id}>
-              <CardJoke joke={joke} />
+              <CardJoke testID="joke" joke={joke} />
             </li>
           ))
         : false}
@@ -40,5 +40,5 @@ ListJokes.propTypes = {
 };
 
 ListJokes.defaultProps = {
-  listNum: 0,
+  listNum: 1,
 };

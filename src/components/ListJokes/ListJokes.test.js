@@ -1,4 +1,11 @@
-import { render, screen } from "@testing-library/react";
-import ListJokes from ".";
+/* eslint-disable no-undef */
+import { render } from "@testing-library/react";
+import List from ".";
 
-describe("ListJokes Component", () => {});
+describe("InputNameMain Component", () => {
+  test("Deve conter uma piada", () => {
+    render(<List />);
+
+    expect(findAllByTestId("joke")).toHaveLength(1);
+  });
+});
