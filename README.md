@@ -70,11 +70,12 @@ npm start
 # <a name="TechnologiesUsed"></a> ⚙ Tecnologias e linguagens usadas
 As tecnologias e linguagens usadas neste projeto:
 
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [React JS](https://reactjs.org)
 - [Material UI](https://material-ui.com/)
 - [React-test-library](https://testing-library.com/)
 - [Axios](https://github.com/axios/axios)
 - [ICNDB API](http://www.icndb.com/api/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 
 
