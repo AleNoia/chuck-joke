@@ -88,7 +88,7 @@ Tecnicamente aprendi muito, ainda mais sobre o React JS e testes com React testi
 
 Conheci o Material UI para construir a aplicação com componentes isolados e fazer correções nas inconsistências dos navegadores.
 
-Desenvolvi ainda mais meus conhecimento acerca do JavaScript e Axios. O estudo contínuo utilizando JS acabatrazendo mais experiência. Aprendi formas melhores, otimizadas e mais legíveis de fazer determinadas lógicaspara uma função na aplicação.
+Desenvolvi ainda mais meus conhecimento acerca do JavaScript e Axios. O estudo contínuo utilizando JS acaba trazendo mais experiência. Aprendi formas melhores, otimizadas e mais legíveis de fazer determinadas lógicas para uma função na aplicação.
 
 ***
 
